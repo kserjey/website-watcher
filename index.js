@@ -1,8 +1,9 @@
+require("dotenv").config();
+
+const fs = require("fs");
 const puppeteer = require("puppeteer");
 const nodemailer = require("nodemailer");
 const looksSame = require("looks-same");
-const fs = require("fs");
-const { deepStrictEqual } = require("assert");
 
 const SCREENSHOT = "screenshot.png";
 const CURRENT_SCREENSHOT = "screenshot-current.png";
@@ -58,8 +59,8 @@ const URL = `https://www.mvideo.ru/products/igrovaya-konsol-sony-playstation-5-4
       host: "smtp.mail.ru",
       port: 465,
       auth: {
-        user: "xak4444@mail.ru",
-        pass: "baVA142sfX",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 

@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Tracking website change",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "looks-same": "^7.2.4",
     "nodemailer": "^6.4.16",
-    "pixelmatch": "^5.2.1",
-    "resemblejs": "^3.2.5",
     "puppeteer": "^5.5.0"
   },
   "devDependencies": {}
