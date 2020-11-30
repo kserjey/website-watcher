@@ -1,7 +1,7 @@
 {
   "name": "website-watcher",
   "version": "1.0.0",
-  "description": "Tracking website change",
+  "description": "Tracking website changes",
   "dependencies": {
     "dotenv": "^8.2.0",
     "looks-same": "^7.2.4",
